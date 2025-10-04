@@ -1,0 +1,58 @@
+[
+    {
+        "img": "images/jabon-liquido.jpg",
+        "alt": "Jabón Líquido",
+        "nombre": "Jabón Líquido 5Lts",
+        "descripcion": "Jabón líquido multiusos para limpieza general. Ideal para baños y cocinas.",
+        "precio": "$2.999",
+        "categoria": "Ropa"
+    },
+    {
+        "img": "images/detergente.jpg",
+        "alt": "Detergente",
+        "nombre": "Detergente 5Lts",
+        "descripcion": "Detergente concentrado para bacha. Eficaz en vajillas",
+        "precio": "$2.999",
+        "categoria": "Cocina"
+    },
+    {
+        "img": "images/desengrasante.jpg",
+        "alt": "Desengrasante",
+        "nombre": "Desengrasante 5Lts",
+        "descripcion": "Desengrasante potente para cocinas y superficies grasientas.",
+        "precio": "$2.999",
+        "categoria": "Cocina"
+    },
+    {
+        "img": "images/limpiavidrios.jpg",
+        "alt": "Limpiavidrios",
+        "nombre": "Limpiavidrios 5Lts",
+        "descripcion": "Limpiavidrios sin residuos para ventanas y espejos.",
+        "precio": "$2.999",
+        "categoria": "Hogar"
+    },
+    {
+        "img": "images/desinfectante.jpg",
+        "alt": "Desinfectante",
+        "nombre": "Desinfectante 5Lts",
+        "descripcion": "Desinfectante antibacterial para superficies y ambientes.",
+        "precio": "$2.999",
+        "categoria": "Hogar"
+    },
+    {
+        "img": "images/lavandina.jpg",
+        "alt": "Desinfectante",
+        "nombre": "Lavandina 5Lts",
+        "descripcion": "Lavandina concentrada para blanqueo y desinfección.",
+        "precio": "$2.999",
+        "categoria": "Hogar"
+    },
+    {
+        "img": "images/Cloro.jpg",
+        "alt": "Desinfectante",
+        "nombre": "Cloro 5Lts",
+        "descripcion": "Cloro concentrada para blanqueo y desinfección.",
+        "precio": "$2.999",
+        "categoria": "Hogar"
+    }
+]

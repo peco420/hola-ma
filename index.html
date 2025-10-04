@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpieza y varios 'Hola ma'</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Limpieza y varios 'Hola ma'</h1>
+            <p>Productos de limpieza de calidad para tu hogar</p>
+            <div id="carrito-icono" class="carrito-icono">
+                🛒 <span id="carrito-contador">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="productos" class="container">
+            <h2>Nuestros Productos</h2>
+            <div id="categorias-filtro" class="categorias-container">
+                <!-- Los botones de categoría se cargarán aquí -->
+            </div>
+            <div class="productos-grid">
+                <!-- Los productos se cargarán aquí dinámicamente -->
+            </div>
+        </section>
+
+        <section id="ubicacion" class="container">
+            <h2>Nuestra Ubicación Kiosco y despensa "Hola ma"</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1759556874171!6m8!1m7!1sd_z0sEJZAZ9eB57gGH00TQ!2m2!1d-34.595057562989915!2d-60.95047161731012!3f319.8765372457008!4f-15.136593764552885!5f1.351440856040657" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h3>Dirección: Av. Dr. Benito de Miguel 211 . Junín - Buenos Aires - Argentina</h3>
+        </section>
+
+        <section id="contacto" class="container">
+            <h2>¿Interesado en nuestros productos por mayor?</h2>
+            <p>Contacta con nuestro closer por WhatsApp para realizar tu pedido o realizar una consulta.</p>
+            <a href="https://wa.me/5491130814028?text=Hola,%20estoy%20interesado%20en%20sus%20productos%20de%20limpieza" class="whatsapp-btn" target="_blank">Contactar por WhatsApp</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Limpieza y varios 'Hola ma'. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Modal de Producto -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal">
+            <span class="modal-close">&times;</span>
+            <div class="modal-content">
+                <img id="modal-img" src="" alt="Imagen de producto">
+                <h3 id="modal-nombre"></h3>
+                <p id="modal-descripcion"></p>
+                <p id="modal-precio" class="precio"></p>
+                <div id="modal-ofertas" class="modal-ofertas"></div>
+                <div class="modal-cantidad-selector">
+                    <span>Cantidad:</span>
+                    <button id="modal-cantidad-disminuir" class="control-btn">-</button>
+                    <span id="modal-cantidad-valor">1</span>
+                    <button id="modal-cantidad-aumentar" class="control-btn">+</button>
+                </div>
+                <div class="modal-actions">
+                    <a id="modal-whatsapp-btn" href="#" class="whatsapp-btn" target="_blank">Contactar</a>
+                    <button id="modal-carrito-btn" class="carrito-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div id="carrito-modal-overlay" class="modal-overlay">
+        <div class="modal">
+            <span id="carrito-modal-close" class="modal-close">&times;</span>
+            <h2>Resumen de tu Pedido</h2>
+            <div id="carrito-items" class="carrito-items">
+                <!-- Items del carrito se agregarán aquí -->
+            </div>
+            <div id="carrito-incentivo-descuento" class="modal-ofertas" style="display: none;"></div>
+            <div id="carrito-resumen" class="carrito-resumen">
+                <div class="resumen-linea"><span>Subtotal:</span> <span id="carrito-subtotal-precio">$0.00</span></div>
+                <div id="resumen-descuento" class="resumen-linea descuento" style="display: none;">
+                    <span>Descuento (10%):</span> <span id="carrito-descuento-valor">-$0.00</span>
+                </div>
+                <div class="resumen-linea total"><strong>Total:</strong> <strong id="carrito-total-precio">$0.00</strong></div>
+            </div>
+            <a id="enviar-pedido-btn" href="#" class="whatsapp-btn" target="_blank">Generar Pedido por WhatsApp</a>
+        </div>
+    </div>
+</body>
+</html>
